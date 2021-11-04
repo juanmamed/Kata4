@@ -34,10 +34,10 @@ public class MailHistogramReader {
             }
         }
         catch(FileNotFoundException exception) {
-            System.out.println("Error MailHistogramReader::read (FileNotFound)" + exception);
+            System.out.println("Error MailHistogramReader::read (FileNotFound)" + exception.getMessage());
         }
         catch(IOException exception){
-            System.out.println("Error MailHistogramReader::read (IO)" + exception);
+            System.out.println("Error MailHistogramReader::read (IO)" + exception.getMessage());
         }
         
         return list;
